@@ -9,7 +9,7 @@ for example. */
 
 export default (string) => {
   const split = string.split(' ').map(item => {
-    return item.length > 8 ? item.substring(0, 9) : item;
+    return item.length > 7 ? item.substring(0, 8) : item;
   });
-  return split[0] === string.substring(0, 9) ? `${split[0]}\n${string.substring(9)}` : string;
+  return split[0] === string.substring(0, 8) ? `${split[0]}\n${string.substring(8)}` : string;
 }
